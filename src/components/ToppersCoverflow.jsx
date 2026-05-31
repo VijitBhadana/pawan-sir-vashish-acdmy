@@ -673,7 +673,7 @@ function TopperCardInner({ t, isCenter }) {
         <div style={{ position:"absolute",inset:0,backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",display:"flex",flexDirection:"column",borderRadius:16,overflow:"hidden" }}>
           <div style={{ position:"relative",overflow:"hidden",flexShrink:0 }}>
             <img src={t.img} alt={t.name}
-              style={{ width:"100%",height:180,objectFit:"cover",objectPosition:"top",display:"block",transition:"transform .5s",transform:flipped&&isCenter?"scale(1.08)":"scale(1)" }}
+              style={{ width:"100%",height:180,objectFit:"cover",objectPosition:"center-10%",display:"block",transition:"transform .5s",transform:flipped&&isCenter?"scale(1.08)":"scale(1)" }}
               onError={e=>{ e.currentTarget.style.cssText=`background:linear-gradient(135deg,${C.navy},#0d5e8a);width:100%;height:180px;display:block`; e.currentTarget.removeAttribute("src"); }}
             />
             <div style={{ position:"absolute",inset:0,background:"linear-gradient(to bottom,transparent 50%,#111e2e)" }}/>
